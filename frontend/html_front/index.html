@@ -14,20 +14,17 @@
         </div>
 
         <nav>
-            <!-- DISCUSSIONS -->
-            <a href="#">
+            <a href="front_login.html" class="nav-connexion">
+                <img src="../assets/Pictogramme_Bleu_Connexion.png" alt="">
+                Connecte
+            </a>
+
+            <a href="#" class="nav-discussion">
                 <img src="../assets/Pictogramme_Blanc_Discussions.png" alt="">
-                Discussions
+                Partages
             </a>
 
-            <!-- CONNEXION -->
-            <a href="front_login.html">
-                <img src="../assets/Pictogramme_Bleu_Persos.png" alt="">
-                Connexion
-            </a>
-
-            <!-- ÉCHANGES -->
-            <a href="#">
+            <a href="#" class="nav-echanges">
                 <img src="../assets/Pictogramme_Orange_Échanges.png" alt="">
                 Échanges
             </a>
@@ -37,14 +34,31 @@
     </header>
 
     <main>
-        <section class="banner">
-            <img src="../assets/Image_Logo.png" alt="Image principale Ytalk">
+
+        <!-- 🔥 SECTION INTRO (IMAGE GAUCHE / TEXTE DROITE) -->
+        <section class="intro">
+            <div class="intro-left">
+                <img src="../assets/Image_Logo.png" alt="Ytalk image">
+            </div>
+
+            <div class="intro-right">
+                <h1>Ytalk</h1>
+
+                <p>
+                    Connecte-toi, partage et échange avec d'autres étudiants sur des sujets divers.
+                </p>
+
+                <p>
+                    Gère tes topics et ton profil en toute simplicité. Partage tes idées, tes sujets favoris ou ce que tu veux (dans la limite du raisonnable 😉).
+                </p>
+
+                <p>
+                    Échange des fichiers et des ressources avec la communauté grâce à des fonctionnalités en constante évolution.
+                </p>
+            </div>
         </section>
 
         <section class="welcome">
-            <h1>Bienvenue sur Ytalk</h1>
-            <p>Connecte, partage et échange avec la communauté.</p>
-
             <div class="actions">
                 <a href="front_register.html" class="btn primary">Créer un compte</a>
                 <a href="front_login.html" class="btn secondary">Se connecter</a>
@@ -52,24 +66,27 @@
         </section>
 
         <section class="features">
-            <div class="feature-card">
-                <img src="../assets/Pictogramme_Blanc_Discussions.png" alt="">
-                <h2>Discussions</h2>
-                <p>Crée des topics et participe aux conversations.</p>
-            </div>
 
-            <div class="feature-card">
-                <img src="../assets/Pictogramme_Bleu_Persos.png" alt="">
-                <h2>Connexion</h2>
+            <a href="front_login.html" class="feature-card">
+                <img src="../assets/Pictogramme_Bleu_Connexion.png" alt="">
+                <h2>Connecte</h2>
                 <p>Accède à ton compte et rejoins la communauté.</p>
-            </div>
+            </a>
 
-            <div class="feature-card">
+            <a href="#" class="feature-card">
+                <img src="../assets/Pictogramme_Blanc_Discussions.png" alt="">
+                <h2>Partages</h2>
+                <p>Crée des topics et participe aux conversations.</p>
+            </a>
+
+            <a href="#" class="feature-card">
                 <img src="../assets/Pictogramme_Orange_Échanges.png" alt="">
                 <h2>Échanges</h2>
                 <p>Partage des fichiers, idées et ressources.</p>
-            </div>
+            </a>
+
         </section>
+
     </main>
 
     <footer>
