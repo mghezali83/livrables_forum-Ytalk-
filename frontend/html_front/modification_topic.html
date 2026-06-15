@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifier un topic - Ytalk</title>
+    <link rel="stylesheet" href="../css_front/modification_topic.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/Logo.png" alt="Logo Ytalk">
+            <span>YTALK</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="forum.html">Topics</a>
+            <a href="#" id="lien-deconnexion">Déconnexion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="modification-section">
+            <div class="modification-card">
+                <p class="mini-title">Modification</p>
+                <h1>Modifier le topic</h1>
+                <p class="description">
+                    Tu peux modifier le titre, le contenu et les tags de ton topic.
+                </p>
+
+                <form id="form-modification-topic">
+                    <div class="input-group">
+                        <label for="titre">Titre du topic</label>
+                        <input type="text" id="titre" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="contenu">Contenu</label>
+                        <textarea id="contenu" required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tags">Tags</label>
+                        <input type="text" id="tags" placeholder="Exemple : javascript, aide, backend">
+                        <small>Sépare les tags avec des virgules.</small>
+                    </div>
+
+                    <button type="submit">Enregistrer les modifications</button>
+                </form>
+
+                <p id="message"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ytalk Forum</p>
+    </footer>
+
+    <script src="../js_front/modification_topic.js"></script>
+</body>
+</html>

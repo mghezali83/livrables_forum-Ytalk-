@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Ytalk</title>
+    <link rel="stylesheet" href="../css_front/admin.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/Logo.png" alt="Logo Ytalk">
+            <span>YTALK</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="forum.html">Topics</a>
+            <a href="#" id="lien-deconnexion">Déconnexion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-header">
+            <p class="mini-title">Dashboard</p>
+            <h1>Administration</h1>
+            <p class="description">
+                Ici l'administrateur peut gérer les utilisateurs, les topics et les messages du forum.
+            </p>
+        </section>
+
+        <section class="admin-tabs">
+            <button id="btn-utilisateurs">Utilisateurs</button>
+            <button id="btn-topics">Topics</button>
+            <button id="btn-messages">Messages</button>
+        </section>
+
+        <section class="admin-section" id="section-utilisateurs">
+            <h2>Utilisateurs</h2>
+
+            <div class="admin-recherche">
+                <input type="text" id="recherche-utilisateurs" placeholder="Rechercher un pseudo, email ou rôle">
+                <button id="btn-recherche-utilisateurs">Rechercher</button>
+            </div>
+
+            <div id="liste-utilisateurs"></div>
+        </section>
+
+        <section class="admin-section" id="section-topics">
+            <h2>Topics</h2>
+
+            <div class="admin-recherche">
+                <input type="text" id="recherche-topics" placeholder="Rechercher un titre, auteur, contenu ou état">
+                <button id="btn-recherche-topics">Rechercher</button>
+            </div>
+
+            <div id="liste-topics-admin"></div>
+        </section>
+
+        <section class="admin-section" id="section-messages">
+            <h2>Messages</h2>
+
+            <div class="admin-recherche">
+                <input type="text" id="recherche-messages" placeholder="Rechercher un message, auteur ou topic">
+                <button id="btn-recherche-messages">Rechercher</button>
+            </div>
+
+            <div id="liste-messages-admin"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ytalk Forum</p>
+    </footer>
+
+    <script src="../js_front/admin.js"></script>
+</body>
+</html>

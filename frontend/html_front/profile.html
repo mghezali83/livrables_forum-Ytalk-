@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile - Ytalk</title>
+    <link rel="stylesheet" href="../css_front/profile.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/Logo.png" alt="Logo Ytalk">
+            <span>YTALK</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="forum.html">Topics</a>
+            <a href="creation_topic.html" class="btn-nav-topic">Créer un topic</a>
+            <a href="#" id="lien-deconnexion">Déconnexion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-header">
+            <p class="mini-title">Mon compte</p>
+            <h1>Profile</h1>
+            <p class="description">
+                Ici tu peux voir tes informations, tes topics créés et les messages que tu as likés.
+            </p>
+        </section>
+
+        <section class="profile-card">
+            <div class="profile-avatar">
+                <span id="avatar-lettre">Y</span>
+            </div>
+
+            <div class="profile-infos">
+                <h2 id="pseudo-utilisateur">Chargement...</h2>
+                <p id="email-utilisateur"></p>
+                <p id="role-utilisateur"></p>
+                <p id="date-utilisateur"></p>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h3 id="total-topics">0</h3>
+                <p>Topics créés</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="total-messages">0</h3>
+                <p>Messages envoyés</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="total-likes">0</h3>
+                <p>Messages likés</p>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Mes topics</h2>
+            <div id="liste-topics-profile"></div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Messages que j’ai likés</h2>
+            <div id="liste-likes-profile"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ytalk Forum</p>
+    </footer>
+
+    <script src="../js_front/profile.js"></script>
+</body>
+
+</html>

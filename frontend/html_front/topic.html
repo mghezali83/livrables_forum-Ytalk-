@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Topic - Ytalk</title>
+    <link rel="stylesheet" href="../css_front/topic.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/Logo.png" alt="Logo Ytalk">
+            <span>YTALK</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="forum.html">Topics</a>
+            <a href="creation_topic.html" id="lien-creation">Créer un topic</a>
+            <a href="#" id="lien-deconnexion">Déconnexion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="topic-section">
+            <div class="topic-card-principal">
+                <p class="mini-title">Discussion</p>
+
+                <h1 id="titre-topic">Chargement...</h1>
+
+                <p class="contenu-topic" id="contenu-topic"></p>
+
+                <div class="topic-infos">
+                    <span id="auteur-topic"></span>
+                    <span id="date-topic"></span>
+                    <span id="etat-topic"></span>
+                    <span id="tags-topic"></span>
+                </div>
+
+                <div class="topic-actions" id="topic-actions"></div>
+            </div>
+        </section>
+
+        <section class="outils-messages">
+            <h2>Messages</h2>
+
+            <div class="tri-zone">
+                <label for="tri-messages">Trier :</label>
+                <select id="tri-messages">
+                    <option value="recent">Plus récents</option>
+                    <option value="ancien">Plus anciens</option>
+                    <option value="popularite">Popularité</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="liste-messages" id="liste-messages">
+            <!-- messages avec js -->
+        </section>
+
+        <section class="form-message-section" id="zone-form-message">
+            <div class="form-message-card">
+                <h2>Répondre au topic</h2>
+
+                <form id="form-message">
+                    <textarea id="contenu-message" placeholder="Écris ton message..." required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+
+                <p id="message-info"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ytalk Forum</p>
+    </footer>
+
+    <script src="../js_front/topic.js"></script>
+</body>
+</html>

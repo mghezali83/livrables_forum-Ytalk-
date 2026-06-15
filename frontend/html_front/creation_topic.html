@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Créer un topic - Ytalk</title>
+    <link rel="stylesheet" href="../css_front/creation_topic.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/Logo.png" alt="Logo Ytalk">
+            <span>YTALK</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="forum.html">Topics</a>
+            <a href="#" id="lien-deconnexion">Déconnexion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="creation-section">
+            <div class="creation-card">
+                <p class="mini-title">Nouveau topic</p>
+                <h1>Créer une discussion</h1>
+                <p class="description">
+                    Crée un topic avec un titre, un contenu et des tags pour aider les autres à le retrouver.
+                </p>
+
+                <form id="form-topic">
+                    <div class="input-group">
+                        <label for="titre">Titre du topic</label>
+                        <input type="text" id="titre" placeholder="Exemple : Besoin d'aide en JavaScript" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="contenu">Contenu</label>
+                        <textarea id="contenu" placeholder="Explique ton sujet ici..." required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tags">Tags</label>
+                        <input type="text" id="tags" placeholder="Exemple : javascript, aide, backend">
+                        <small>Sépare les tags avec des virgules.</small>
+                    </div>
+
+                    <button type="submit">Créer le topic</button>
+                </form>
+
+                <p id="message"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ytalk Forum</p>
+    </footer>
+
+    <script src="../js_front/creation_topic.js"></script>
+</body>
+</html>

@@ -14,75 +14,66 @@
         </div>
 
         <nav>
-            <a href="front_login.html" class="nav-connexion">
+            <a href="login.html" class="nav-connexion" id="lien-profil">
                 <img src="../assets/Pictogramme_Bleu_Connexion.png" alt="">
-                Connecte
+                <span id="texte-profil">Connexion</span>
             </a>
 
-            <a href="#" class="nav-discussion">
+            <a href="forum.html" class="nav-discussion">
                 <img src="../assets/Pictogramme_Blanc_Discussions.png" alt="">
-                Partages
-            </a>
-
-            <a href="#" class="nav-echanges">
-                <img src="../assets/Pictogramme_Orange_Échanges.png" alt="">
                 Échanges
             </a>
 
-            <a href="front_register.html" class="register-link">Inscription</a>
+            <a href="feature_partage.html" class="nav-echanges">
+                <img src="../assets/Pictogramme_Orange_Échanges.png" alt="">
+                Partage
+            </a>
+
+            <a href="register.html" class="register-link" id="lien-inscription">Inscription</a>
         </nav>
     </header>
 
     <main>
 
-        <!-- 🔥 SECTION INTRO (IMAGE GAUCHE / TEXTE DROITE) -->
-        <section class="intro">
-            <div class="intro-left">
-                <img src="../assets/Image_Logo.png" alt="Ytalk image">
+        <section class="hero">
+            <div class="hero-image">
+                <img src="../assets/Image_Logo.png" alt="Image Ytalk">
             </div>
 
-            <div class="intro-right">
-                <h1>Ytalk</h1>
+            <div class="hero-content">
+                <p class="mini-title">Forum étudiant</p>
 
-                <p>
-                    Connecte-toi, partage et échange avec d'autres étudiants sur des sujets divers.
+                <h1>Bienvenue sur <span>Ytalk</span></h1>
+
+                <p class="description" id="texte-presentation">
+                    Connecte-toi, consulte les topics, participe aux échanges et discute avec les autres étudiants de l’école.
                 </p>
 
-                <p>
-                    Gère tes topics et ton profil en toute simplicité. Partage tes idées, tes sujets favoris ou ce que tu veux (dans la limite du raisonnable 😉).
-                </p>
-
-                <p>
-                    Échange des fichiers et des ressources avec la communauté grâce à des fonctionnalités en constante évolution.
-                </p>
-            </div>
-        </section>
-
-        <section class="welcome">
-            <div class="actions">
-                <a href="front_register.html" class="btn primary">Créer un compte</a>
-                <a href="front_login.html" class="btn secondary">Se connecter</a>
+                <div class="hero-actions">
+                    <a href="register.html" class="btn primary" id="bouton-principal">Créer un compte</a>
+                    <a href="login.html" class="btn secondary" id="bouton-secondaire">Se connecter</a>
+                </div>
             </div>
         </section>
 
         <section class="features">
 
-            <a href="front_login.html" class="feature-card">
+            <a href="login.html" class="feature-card" id="carte-profil">
                 <img src="../assets/Pictogramme_Bleu_Connexion.png" alt="">
-                <h2>Connecte</h2>
-                <p>Accède à ton compte et rejoins la communauté.</p>
+                <h2 id="titre-carte-profil">Connexion</h2>
+                <p id="texte-carte-profil">Accède à ton compte pour participer au forum.</p>
             </a>
 
-            <a href="#" class="feature-card">
+            <a href="forum.html" class="feature-card">
                 <img src="../assets/Pictogramme_Blanc_Discussions.png" alt="">
-                <h2>Partages</h2>
-                <p>Crée des topics et participe aux conversations.</p>
+                <h2>Échanges</h2>
+                <p>Lis les topics, réponds aux messages et discute avec la communauté.</p>
             </a>
 
-            <a href="#" class="feature-card">
+            <a href="feature_partage.html" class="feature-card">
                 <img src="../assets/Pictogramme_Orange_Échanges.png" alt="">
-                <h2>Échanges</h2>
-                <p>Partage des fichiers, idées et ressources.</p>
+                <h2>Partage</h2>
+                <p>Une future fonctionnalité pour partager des documents, images et ressources.</p>
             </a>
 
         </section>
@@ -93,5 +84,6 @@
         <p>© 2026 Ytalk Forum</p>
     </footer>
 
+    <script src="../js_front/index.js"></script>
 </body>
 </html>

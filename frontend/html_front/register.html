@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription - Ytalk</title>
+    <link rel="stylesheet" href="../css_front/register.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/Logo.png" alt="Logo Ytalk">
+            <span>YTALK</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="login.html" class="nav-connexion">Connexion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <div class="form-card">
+                <h1>Inscription</h1>
+                <p class="intro">Crée ton compte pour pouvoir participer aux topics.</p>
+
+                <form id="form-register">
+                    <div class="input-group">
+                        <label for="pseudo">Pseudo</label>
+                        <input type="text" id="pseudo" placeholder="Exemple : kantinleBG xXtinkanXx" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="kantin@mail.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mot_de_passe">Mot de passe</label>
+                        <input type="password" id="mot_de_passe" placeholder="Minimum 8 caracteres 1 spécial , 1 Majuscule" required>
+                    </div>
+
+                    <button type="submit">Créer mon compte</button>
+                </form>
+
+                <p id="message"></p>
+
+                <p class="lien-bas">
+                    Déjà un compte ?
+                    <a href="login.html">Se connecter</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js_front/register.js"></script>
+</body>
+</html>

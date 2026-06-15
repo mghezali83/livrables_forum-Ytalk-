@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #050505;
+    color: white;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    min-height: 100px;
+    background-color: #050505;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.logo span {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff;
+    transform: translateY(-2px);
+}
+
+/* MAIN */
+main {
+    padding: 50px 80px;
+}
+
+.profile-header {
+    margin-bottom: 35px;
+}
+
+.mini-title {
+    color: #00aaff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.profile-header h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 20px;
+    color: #cfcfcf;
+    max-width: 750px;
+    line-height: 1.5;
+}
+
+/* CARD PROFILE */
+.profile-card {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.profile-avatar {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #008cff, #ff8c00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.profile-infos h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.profile-infos p {
+    color: #d4d4d4;
+    margin-bottom: 8px;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 220px;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 28px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 42px;
+    color: #00aaff;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    color: #cfcfcf;
+    font-size: 18px;
+}
+
+/* SECTIONS */
+.profile-section {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    margin-bottom: 35px;
+}
+
+.profile-section h2 {
+    font-size: 32px;
+    margin-bottom: 22px;
+}
+
+.profile-item {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 22px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 18px;
+}
+
+.profile-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-item p {
+    color: #d4d4d4;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.profile-actions {
+    margin-top: 15px;
+}
+
+.profile-actions a {
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #008cff, #ff8c00);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-nav-topic {
+    background: linear-gradient(90deg, #008cff, #ff8c00);
+    padding: 12px 22px;
+    border-radius: 30px;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: gray;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        padding: 35px 25px;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-header h1 {
+        font-size: 40px;
+    }
+}

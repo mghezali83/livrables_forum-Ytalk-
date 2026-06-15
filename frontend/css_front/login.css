@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #050505;
+    color: white;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    min-height: 100px;
+    background-color: #050505;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.logo span {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-inscription {
+    background: linear-gradient(90deg, #008cff, #ff8c00);
+    padding: 12px 22px;
+    border-radius: 30px;
+    color: white;
+}
+
+/* FORM */
+.form-section {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.form-card {
+    width: 450px;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 40px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.form-card h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #cfcfcf;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #008cff, #ff8c00);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#message {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lien-bas {
+    margin-top: 25px;
+    text-align: center;
+    color: #cfcfcf;
+}
+
+.lien-bas a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+}

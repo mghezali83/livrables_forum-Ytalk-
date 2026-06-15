@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum - Ytalk</title>
+    <link rel="stylesheet" href="../css_front/forum.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/Logo.png" alt="Logo Ytalk">
+            <span>YTALK</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="profile.html" id="lien-profile">Profil</a>
+            <a href="creation_topic.html" id="lien-creation">Créer un topic</a>
+            <a href="#" id="lien-deconnexion">Déconnexion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="forum-header">
+            <div>
+                <p class="mini-title">Partages</p>
+                <h1>Topics du forum</h1>
+                <p class="description">
+                    Consulte les discussions, cherche par titre, contenu, tag ou auteur, et participe aux échanges.
+                </p>
+            </div>
+        </section>
+
+        <section class="outils-forum">
+            <div class="recherche-zone">
+                <input type="text" id="recherche" placeholder="Rechercher par titre, contenu, tag ou auteur">
+                <button id="btn-recherche">Rechercher</button>
+            </div>
+
+            <div class="pagination-zone">
+                <label for="limite">Afficher :</label>
+                <select id="limite">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="1000">Tous</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="liste-topics" id="liste-topics">
+            <!-- les topics arrivent ici avec le js -->
+        </section>
+
+        <section class="pagination">
+            <button id="page-precedente">Précédent</button>
+            <span id="info-page">Page 1</span>
+            <button id="page-suivante">Suivant</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ytalk Forum</p>
+    </footer>
+
+    <script src="../js_front/forum.js"></script>
+</body>
+</html>
