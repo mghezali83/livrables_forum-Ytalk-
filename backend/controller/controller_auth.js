@@ -8,8 +8,8 @@ function hasherMotDePasse(motDePasse) {
 
 //on verifie que le pseudo a que des chiffre et lettrre 
 function pseudoValide(pseudo) {
-    const regex = /^[a-zA-Z0-9]+$/;
-    return regex.test(pseudo);
+    const chiflet = /^[a-zA-Z0-9]+$/;
+    return chiflet.test(pseudo);
 }
 
 // on verifie si dans le mdp fait 8 caracterer et ai au moins 1 majuscule et 1 caractére spécial
@@ -59,7 +59,7 @@ function inscrireUtilisateur(req, res) {
                 message: "Ce pseudo ou cet email existe deja"
             });
         }
-        //on hash le mdp et on le stock dans DB comme le pseudo et @
+        
         const motDePasseHash = hasherMotDePasse(motDePasse);
         
         const requeteAjout = `

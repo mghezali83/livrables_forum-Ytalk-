@@ -189,19 +189,6 @@ function afficherMessages(messages) {
         );
 
         let boutonSupprimer = "";
-        let boutonsVote = "";
-
-        if (utilisateur) {
-            boutonsVote = `
-                <button class="btn-like" onclick="voterMessage(${message.id}, 'like')">
-                    Like
-                </button>
-
-                <button class="btn-dislike" onclick="voterMessage(${message.id}, 'dislike')">
-                    Dislike
-                </button>
-            `;
-        }
 
         if (peutSupprimer) {
             boutonSupprimer = `
@@ -209,6 +196,14 @@ function afficherMessages(messages) {
                     Supprimer
                 </button>
             `;
+        }
+
+        let actionLike = "alerteConnexion()";
+        let actionDislike = "alerteConnexion()";
+
+        if (utilisateur) {
+            actionLike = `voterMessage(${message.id}, 'like')`;
+            actionDislike = `voterMessage(${message.id}, 'dislike')`;
         }
 
         carte.innerHTML = `
@@ -220,12 +215,18 @@ function afficherMessages(messages) {
             <p class="message-contenu">${message.contenu}</p>
 
             <div class="message-score">
-                <span>Likes : ${message.likes}</span>
-                <span>Dislikes : ${message.dislikes}</span>
+                <button class="btn-vote btn-like" onclick="${actionLike}">
+                    <img src="../assets/Pictogramme_Bleu_Like.png" alt="Like">
+                    <span>${message.likes}</span>
+                </button>
+
+                <button class="btn-vote btn-dislike" onclick="${actionDislike}">
+                    <img src="../assets/Pictogramme_Orange_Dislike.png" alt="Dislike">
+                    <span>${message.dislikes}</span>
+                </button>
             </div>
 
             <div class="message-actions">
-                ${boutonsVote}
                 ${boutonSupprimer}
             </div>
         `;
@@ -234,9 +235,13 @@ function afficherMessages(messages) {
     });
 }
 
+function alerteConnexion() {
+    alert("Tu dois être connecté pour voter");
+}
+
 function voterMessage(messageId, vote) {
     if (!utilisateur) {
-        alert("Tu dois etre connecte pour voter");
+        alert("Tu dois être connecté pour voter");
         return;
     }
 
